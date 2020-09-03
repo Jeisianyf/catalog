@@ -1,0 +1,42 @@
+#modal{
+    background: #edededee;
+    position: fixed;
+    top: 0; /*habilitado ao ter a position absolute, moveu meu form pra cima */
+   
+    width: 100vw; /*ocupar toda a tela do dispositivo */
+    height: 100vh; 
+
+    display: flex; /*nesse caso n vai fazer diferença, pois só tem ele de item, mas habilita outras funcionalidade:   */
+    align-items: center; /* alinha os itens no centro do eixo Y */
+    justify-content: center; /* alinha os itens no centro do eixo X */
+    transition: 300ms; /*demorar um pouco para aparecer a tela, porém o display n aceita*/
+}
+
+#modal.hide {
+    display: none;
+}
+
+#modal .content {
+    width: 480px;
+
+}
+
+#modal .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#modal .header a {
+    background-image: url("../img/x.svg");
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    font-size: 0.01px;
+}
+
+#modal h3 {
+    color: rgba(0, 0, 0, 0.74);
+}

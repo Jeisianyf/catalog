@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body::after {
+    content: "";
+    position: absolute;
+    background-color: #EDEDED;
+    top: 0;
+    height: 25rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
